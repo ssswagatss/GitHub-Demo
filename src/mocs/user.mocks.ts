@@ -6,7 +6,7 @@ const userList: User[] = [
         company: 'Mindfire solutions',
         location: 'Bhubaneswar',
         bio: 'Fullstack Developer',
-        avatar_url: 'google.com',
+        avatar_url: 'http://via.placeholder.com/150x150',
         email: 'ssswagatss@gmail.com'
     },
     {
@@ -14,7 +14,7 @@ const userList: User[] = [
         company: 'ESSPL',
         location: 'Bhubaneswar',
         bio: 'Fullstack Developer and Designer',
-        avatar_url: 'google.com',
+        avatar_url: 'http://via.placeholder.com/150x150',
         email: 'divya@gmail.com'
     }
 ];

@@ -1,3 +1,4 @@
+import { User } from './../../models/user.interface';
 import { GithubService } from './../../providers/github-service/github-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -9,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProfileSearchResultPage {
   username: string;
-
+  user: User
   constructor(private gitHubService: GithubService, private navCtrl: NavController, private navParams: NavParams) {
     console.log("ionViewWillEnterConstructor", this.navParams);
   }
@@ -24,6 +25,7 @@ export class ProfileSearchResultPage {
     this.gitHubService.mockGetUserInformation(this.username)
       .subscribe(data => {
         console.log("Logging Data", data);
+        this.user = data;
       });
   }
 
