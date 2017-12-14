@@ -4,7 +4,9 @@ import { GithubService } from './../../providers/github-service/github-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-@IonicPage()
+@IonicPage({
+  segment: 'profile/result/:username'
+})
 @Component({
   selector: 'page-profile-search-result',
   templateUrl: 'profile-search-result.html',
